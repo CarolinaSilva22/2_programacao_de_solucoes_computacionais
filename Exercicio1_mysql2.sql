@@ -1,7 +1,7 @@
 create schema if not exists escola;
 use escola;
 create table if not exists aluno (
-cpf int auto_increment primary key, nome varchar(128), data_nascimento date, telefone varchar(15), endereco varchar(100)
+matricula int auto_increment primary key, cpf varchar(15), nome varchar(128), data_nascimento date, telefone varchar(15), endereco varchar(100)
 );
 create table if not exists curso (
 id int auto_increment primary key, nome varchar(128), descricao varchar(120), valor_mensalidade double, data_criacao date
